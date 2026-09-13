@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical colophon detailing how this plain HTML website was built and validated.">
+    <!-- Replace with your real full name -->
+    <meta name="author" content="Your Full Name">
+    <title>Invictus GO Astana - Colophon</title>
+</head>
+<body>
+    <!-- Page author: Your Full Name -->
+
+    <header>
+        <h1>Colophon: How This Website Was Built</h1>
+        <p>Behind-the-scenes documentation of the HTML markup and development workflow.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memberships.html">Prices and Rules</a></li>
+                <li><a href="booking.html">Sign Up Form</a></li>
+                <li><a href="colophon.html">Colophon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Jump to: <a href="#code-tools">Tools and commands</a> | <a href="#standards">HTML standards</a></p>
+
+        <section id="code-tools">
+            <h2>Development Tools and Terminal Commands</h2>
+            <p>
+                This site was authored completely in plain HTML5 without any CSS styling, framework templates, or build tools. 
+                All files were created in a lightweight text editor and tested locally in Google Chrome and Mozilla Firefox.
+            </p>
+            <p>
+                To commit changes into the local version control repository, I ran the following command in my terminal:
+            </p>
+            <pre>
+git status
+git add index.html memberships.html booking.html colophon.html
+git commit -m "feat: complete initial HTML markup"
+            </pre>
+            <p>
+                To inspect source code directly inside the browser, press <kbd>Ctrl</kbd> + <kbd>U</kbd> on Windows or <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>U</kbd> on macOS. 
+                When checking network requests, the terminal sample output looked like:
+            </p>
+            <p>
+                Console output: <samp>GET /index.html 200 OK - 4.2ms</samp>
+            </p>
+            <p>
+                The underlying skeleton relies strictly on semantic tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.
+            </p>
+        </section>
+
+        <section id="standards">
+            <h2>Validation and Code Integrity</h2>
+            <article>
+                <h3>W3C Conformance</h3>
+                <p>
+                    Every document has been checked against the official W3C Nu HTML Checker. 
+                    No custom inline styles or script tags were inserted. 
+                    Colors and layout will be introduced in subsequent coursework assignments.
+                </p>
+            </article>
+            <aside>
+                <h3>Summary specs</h3>
+                <p>
+                    Markup standard: <mark>HTML5</mark>.<br>
+                    Character encoding: UTF-8.<br>
+                    Total pages: 4 distinct files.
+                </p>
+            </aside>
+        </section>
+
+        <!-- div used strictly as an isolated wrapper for bottom page navigation -->
+        <div>
+            <p><a href="#code-tools">Back to technical tools &uarr;</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Address: Mangilik El Ave 18, Astana | Phone: <a href="tel:+77172555333">+7 (7172) 555-333</a></p>
+        <p>Email: <a href="mailto:support@invictusgo.kz">support@invictusgo.kz</a></p>
+        <p>Main website: <a href="https://invictusgo.kz" target="_blank" rel="noopener noreferrer">invictusgo.kz</a></p>
+        <p>&copy; 2026 Student web project about Invictus GO.</p>
+    </footer>
+</body>
+</html>
